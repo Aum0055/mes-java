@@ -1,0 +1,13 @@
+ถ้าใช้ Maven
+# Build project
+mvn clean install
+
+# Run
+mvn spring-boot:run
+
+ถ้าใช้ Gradle ของใหม่
+# Build project
+./gradlew build
+
+# Run
+./gradlew bootRun

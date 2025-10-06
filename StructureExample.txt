@@ -1,0 +1,27 @@
+spring-ws-crud/
+├─ pom.xml                        # Dependency
+├─ src/main/java/com/example/wscrud/
+│  ├─ SpringWsCrudApplication.java   # Main Application
+│  │
+│  ├─ model/                         # Entity/Table
+│  │   └─ WorkOrder.java
+│  │
+│  ├─ repository/                    # Data Layer
+│  │   └─ WorkOrderRepository.java
+│  │
+│  ├─ service/                       # Business Logic
+│  │   └─ WorkOrderService.java
+│  │
+│  ├─ controller/                    # REST + WebSocket API
+│  │   ├─ WorkOrderController.java   # CRUD WorkOrders
+│  │   ├─ DashboardController.java   # ปุ่มกดยอดงาน (OK)
+│  │
+│  ├─ websocket/                     # Config WebSocket
+│  │   └─ WebSocketConfig.java
+│
+├─ src/main/resources/
+│  ├─ application.yml                # DB Config
+│  └─ static/                        # HTML frontend (ถ้าจะใส่)
+│      ├─ dashboard.html
+│      ├─ workorder.html
+│      └─ ok.html
